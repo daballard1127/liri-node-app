@@ -2,7 +2,7 @@
 var request = require('request');
 
 function callMovieName(){
-var command = process.argv[2];
+// var command = process.argv[2];
 
 function returnMovieName() {
 if (process.argv[3] === undefined) {
@@ -33,15 +33,15 @@ request(movieQueryURL, function(error, response, body) {
 	var objMovie = JSON.parse(body)
 
 	console.log('body:', body);
-	console.log("Title: " + objMovie.Title);
-	console.log("Release Year: " + objMovie.Year);
-	console.log("IMdB Rating: " + objMovie.imdbRating);
-	console.log("Country: " + objMovie.Country);
-	console.log("Language: " + objMovie.Language);
-	console.log("Plot: " + objMovie.Plot);
-	console.log("Actors: " + objMovie.Actors);
-	console.log("Rotten Tomatoes Rating: " + objMovie.tomatoRating);
-	console.log("Rotten Tomatoes URL: " + objMovie.tomatoURL);
+	console.log("Title: " + objMovie.Title+"\r\n");
+	console.log("Release Year: " + objMovie.Year+"\r\n");
+	console.log("IMdB Rating: " + objMovie.imdbRating+"\r\n");
+	console.log("Country: " + objMovie.Country+"\r\n");
+	console.log("Language: " + objMovie.Language+"\r\n");
+	console.log("Plot: " + objMovie.Plot+"\r\n");
+	console.log("Actors: " + objMovie.Actors+"\r\n");
+	console.log("Rotten Tomatoes Rating: " + objMovie.tomatoRating+"\r\n");
+	console.log("Rotten Tomatoes URL: " + objMovie.tomatoURL+"\r\n");
 
 
 });

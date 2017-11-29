@@ -1,7 +1,11 @@
+var request = require("request");
+var twitter = require("Twitter");
+var spotify = require("Spotify");
+
 var dbkey = require("./keys.js");
 var callTweets = require("./twitter");
-var callMovieName = require("./request");
-
+var callMovieName = require("./movie");
+var fs = require("fs");
 
 function takingaCommand() {
 	var command = process.argv[2];
@@ -23,6 +27,4 @@ function takingaCommand() {
 }
 takingaCommand();
 
-var request = require("request");
-var twitter = require("Twitter");
-var spotify = require("Spotify");
+

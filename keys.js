@@ -10,11 +10,11 @@ var twitterKeys = {
 
 module.exports = twitterKeys;
 
-var spotifyKeys = {
+// var spotifyKeys = {
 
-	Id:'262577b127934aae91f04d0ca8eeafbe',
-	Secret:'b05da352e6024e138d98f934b432e7cf',
-}
+// 	Id:'262577b127934aae91f04d0ca8eeafbe',
+// 	Secret:'b05da352e6024e138d98f934b432e7cf',
+// }
 
 // module.exports = {
 
